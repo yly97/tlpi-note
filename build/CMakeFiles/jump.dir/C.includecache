@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/error_functions.h
+
+../include/get_num.h
+
+../include/tlpi_hdr.h
+sys/types.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+errno.h
+-
+string.h
+-
+stdbool.h
+-
+get_num.h
+../include/get_num.h
+error_functions.h
+../include/error_functions.h
+sys/file.h
+-
+
+/home/leaf/cpp_work/tlpi/src/ch06/jump.c
+setjmp.h
+-
+stdio.h
+-
+stdlib.h
+-
+tlpi_hdr.h
+/home/leaf/cpp_work/tlpi/src/ch06/tlpi_hdr.h
+

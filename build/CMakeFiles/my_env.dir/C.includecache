@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/leaf/cpp_work/tlpi-note/src/ch06/my_env.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+
