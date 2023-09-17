@@ -1,1 +1,0 @@
-/usr/bin/cc -o0   CMakeFiles/my_env.dir/src/ch06/my_env.c.o  -o ../bin/my_env   -L/home/leaf/cpp_work/tlpi-note/lib  -Wl,-rpath,/home/leaf/cpp_work/tlpi-note/lib ../lib/libtlpi.a 

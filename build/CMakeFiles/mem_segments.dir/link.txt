@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/mem_segments.dir/src/ch06/mem_segments.c.o  -o ../bin/mem_segments   -L/home/leaf/cpp_work/tlpi/lib  -Wl,-rpath,/home/leaf/cpp_work/tlpi/lib ../lib/libtlpi.a 

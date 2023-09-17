@@ -111,111 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_env
+# Target rules for targets named malloc
 
 # Build rule for target.
-my_env: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_env
-.PHONY : my_env
+malloc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 malloc
+.PHONY : malloc
 
 # fast build rule for target.
-my_env/fast:
-	$(MAKE) -f CMakeFiles/my_env.dir/build.make CMakeFiles/my_env.dir/build
-.PHONY : my_env/fast
+malloc/fast:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/build
+.PHONY : malloc/fast
 
-#=============================================================================
-# Target rules for targets named tlpi
+src/ch07/mem.o: src/ch07/mem.c.o
 
-# Build rule for target.
-tlpi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tlpi
-.PHONY : tlpi
-
-# fast build rule for target.
-tlpi/fast:
-	$(MAKE) -f CMakeFiles/tlpi.dir/build.make CMakeFiles/tlpi.dir/build
-.PHONY : tlpi/fast
-
-include/error_functions.o: include/error_functions.c.o
-
-.PHONY : include/error_functions.o
+.PHONY : src/ch07/mem.o
 
 # target to build an object file
-include/error_functions.c.o:
-	$(MAKE) -f CMakeFiles/tlpi.dir/build.make CMakeFiles/tlpi.dir/include/error_functions.c.o
-.PHONY : include/error_functions.c.o
+src/ch07/mem.c.o:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/mem.c.o
+.PHONY : src/ch07/mem.c.o
 
-include/error_functions.i: include/error_functions.c.i
+src/ch07/mem.i: src/ch07/mem.c.i
 
-.PHONY : include/error_functions.i
-
-# target to preprocess a source file
-include/error_functions.c.i:
-	$(MAKE) -f CMakeFiles/tlpi.dir/build.make CMakeFiles/tlpi.dir/include/error_functions.c.i
-.PHONY : include/error_functions.c.i
-
-include/error_functions.s: include/error_functions.c.s
-
-.PHONY : include/error_functions.s
-
-# target to generate assembly for a file
-include/error_functions.c.s:
-	$(MAKE) -f CMakeFiles/tlpi.dir/build.make CMakeFiles/tlpi.dir/include/error_functions.c.s
-.PHONY : include/error_functions.c.s
-
-include/get_num.o: include/get_num.c.o
-
-.PHONY : include/get_num.o
-
-# target to build an object file
-include/get_num.c.o:
-	$(MAKE) -f CMakeFiles/tlpi.dir/build.make CMakeFiles/tlpi.dir/include/get_num.c.o
-.PHONY : include/get_num.c.o
-
-include/get_num.i: include/get_num.c.i
-
-.PHONY : include/get_num.i
+.PHONY : src/ch07/mem.i
 
 # target to preprocess a source file
-include/get_num.c.i:
-	$(MAKE) -f CMakeFiles/tlpi.dir/build.make CMakeFiles/tlpi.dir/include/get_num.c.i
-.PHONY : include/get_num.c.i
+src/ch07/mem.c.i:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/mem.c.i
+.PHONY : src/ch07/mem.c.i
 
-include/get_num.s: include/get_num.c.s
+src/ch07/mem.s: src/ch07/mem.c.s
 
-.PHONY : include/get_num.s
-
-# target to generate assembly for a file
-include/get_num.c.s:
-	$(MAKE) -f CMakeFiles/tlpi.dir/build.make CMakeFiles/tlpi.dir/include/get_num.c.s
-.PHONY : include/get_num.c.s
-
-src/ch06/my_env.o: src/ch06/my_env.c.o
-
-.PHONY : src/ch06/my_env.o
-
-# target to build an object file
-src/ch06/my_env.c.o:
-	$(MAKE) -f CMakeFiles/my_env.dir/build.make CMakeFiles/my_env.dir/src/ch06/my_env.c.o
-.PHONY : src/ch06/my_env.c.o
-
-src/ch06/my_env.i: src/ch06/my_env.c.i
-
-.PHONY : src/ch06/my_env.i
-
-# target to preprocess a source file
-src/ch06/my_env.c.i:
-	$(MAKE) -f CMakeFiles/my_env.dir/build.make CMakeFiles/my_env.dir/src/ch06/my_env.c.i
-.PHONY : src/ch06/my_env.c.i
-
-src/ch06/my_env.s: src/ch06/my_env.c.s
-
-.PHONY : src/ch06/my_env.s
+.PHONY : src/ch07/mem.s
 
 # target to generate assembly for a file
-src/ch06/my_env.c.s:
-	$(MAKE) -f CMakeFiles/my_env.dir/build.make CMakeFiles/my_env.dir/src/ch06/my_env.c.s
-.PHONY : src/ch06/my_env.c.s
+src/ch07/mem.c.s:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/mem.c.s
+.PHONY : src/ch07/mem.c.s
 
 # Help Target
 help:
@@ -225,17 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... my_env"
-	@echo "... tlpi"
-	@echo "... include/error_functions.o"
-	@echo "... include/error_functions.i"
-	@echo "... include/error_functions.s"
-	@echo "... include/get_num.o"
-	@echo "... include/get_num.i"
-	@echo "... include/get_num.s"
-	@echo "... src/ch06/my_env.o"
-	@echo "... src/ch06/my_env.i"
-	@echo "... src/ch06/my_env.s"
+	@echo "... malloc"
+	@echo "... src/ch07/mem.o"
+	@echo "... src/ch07/mem.i"
+	@echo "... src/ch07/mem.s"
 .PHONY : help
 
 

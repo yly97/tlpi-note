@@ -1,1 +1,0 @@
-/usr/bin/cc -o0   CMakeFiles/jump.dir/src/ch06/jump.c.o  -o ../bin/jump   -L/home/leaf/cpp_work/tlpi/lib  -Wl,-rpath,/home/leaf/cpp_work/tlpi/lib -ltlpi 
