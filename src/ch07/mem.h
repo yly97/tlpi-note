@@ -4,8 +4,8 @@
 extern "C" {
 #endif
 
-void *mmalloc(uint32_t size);
-void mfree(void *ptr);
+void *memAlloc(uint32_t size);
+void memFree(void *ptr);
 
 #ifdef __cplusplus
 }
