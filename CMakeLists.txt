@@ -13,7 +13,7 @@ link_directories(${PROJECT_SOURCE_DIR}/lib)
 #     include/get_num.c)
 # add_library(tlpi ${LIB_SRC})
 
-add_executable(malloc src/ch07/mem.c)     
+add_executable(malloc src/ch07/malloc.c)     
 
 target_link_libraries(malloc tlpi)
 

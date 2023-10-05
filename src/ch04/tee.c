@@ -31,7 +31,7 @@ main(int argc, char *argv[]) {
     // 处理命令选项
     while ((opt = getopt(argc, argv, ":ah")) != -1) {
         if (opt == 'h') {
-            usageErr(" %s [-a]\n", argv[0]);
+            usageErr(" %s [-a] file\n", argv[0]);
         }
 
         switch (opt)
@@ -49,7 +49,7 @@ main(int argc, char *argv[]) {
     }
 
     if (optind + 1 != argc) {
-        usageErr(" %s [-a]\n", argv[0]);
+        usageErr(" %s [-a] file\n", argv[0]);
     }
 
     int open_flags = O_WRONLY | O_CREAT;

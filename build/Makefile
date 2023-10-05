@@ -123,32 +123,32 @@ malloc/fast:
 	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/build
 .PHONY : malloc/fast
 
-src/ch07/mem.o: src/ch07/mem.c.o
+src/ch07/malloc.o: src/ch07/malloc.c.o
 
-.PHONY : src/ch07/mem.o
+.PHONY : src/ch07/malloc.o
 
 # target to build an object file
-src/ch07/mem.c.o:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/mem.c.o
-.PHONY : src/ch07/mem.c.o
+src/ch07/malloc.c.o:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/malloc.c.o
+.PHONY : src/ch07/malloc.c.o
 
-src/ch07/mem.i: src/ch07/mem.c.i
+src/ch07/malloc.i: src/ch07/malloc.c.i
 
-.PHONY : src/ch07/mem.i
+.PHONY : src/ch07/malloc.i
 
 # target to preprocess a source file
-src/ch07/mem.c.i:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/mem.c.i
-.PHONY : src/ch07/mem.c.i
+src/ch07/malloc.c.i:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/malloc.c.i
+.PHONY : src/ch07/malloc.c.i
 
-src/ch07/mem.s: src/ch07/mem.c.s
+src/ch07/malloc.s: src/ch07/malloc.c.s
 
-.PHONY : src/ch07/mem.s
+.PHONY : src/ch07/malloc.s
 
 # target to generate assembly for a file
-src/ch07/mem.c.s:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/mem.c.s
-.PHONY : src/ch07/mem.c.s
+src/ch07/malloc.c.s:
+	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/malloc.c.s
+.PHONY : src/ch07/malloc.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... malloc"
-	@echo "... src/ch07/mem.o"
-	@echo "... src/ch07/mem.i"
-	@echo "... src/ch07/mem.s"
+	@echo "... src/ch07/malloc.o"
+	@echo "... src/ch07/malloc.i"
+	@echo "... src/ch07/malloc.s"
 .PHONY : help
 
 
