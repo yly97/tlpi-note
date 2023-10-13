@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/leaf/cpp_work/tlpi-note/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/malloc.dir/all
+all: CMakeFiles/initgroup.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/malloc.dir/clean
+clean: CMakeFiles/initgroup.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/malloc.dir
+# Target rules for target CMakeFiles/initgroup.dir
 
 # All Build rule for target.
-CMakeFiles/malloc.dir/all:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/depend
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leaf/cpp_work/tlpi-note/build/CMakeFiles --progress-num=1,2 "Built target malloc"
-.PHONY : CMakeFiles/malloc.dir/all
+CMakeFiles/initgroup.dir/all:
+	$(MAKE) -f CMakeFiles/initgroup.dir/build.make CMakeFiles/initgroup.dir/depend
+	$(MAKE) -f CMakeFiles/initgroup.dir/build.make CMakeFiles/initgroup.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leaf/cpp_work/tlpi-note/build/CMakeFiles --progress-num=1,2 "Built target initgroup"
+.PHONY : CMakeFiles/initgroup.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/malloc.dir/rule: cmake_check_build_system
+CMakeFiles/initgroup.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leaf/cpp_work/tlpi-note/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/malloc.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/initgroup.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leaf/cpp_work/tlpi-note/build/CMakeFiles 0
-.PHONY : CMakeFiles/malloc.dir/rule
+.PHONY : CMakeFiles/initgroup.dir/rule
 
 # Convenience name for target.
-malloc: CMakeFiles/malloc.dir/rule
+initgroup: CMakeFiles/initgroup.dir/rule
 
-.PHONY : malloc
+.PHONY : initgroup
 
 # clean rule for target.
-CMakeFiles/malloc.dir/clean:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/clean
-.PHONY : CMakeFiles/malloc.dir/clean
+CMakeFiles/initgroup.dir/clean:
+	$(MAKE) -f CMakeFiles/initgroup.dir/build.make CMakeFiles/initgroup.dir/clean
+.PHONY : CMakeFiles/initgroup.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

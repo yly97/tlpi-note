@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named malloc
+# Target rules for targets named initgroup
 
 # Build rule for target.
-malloc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 malloc
-.PHONY : malloc
+initgroup: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 initgroup
+.PHONY : initgroup
 
 # fast build rule for target.
-malloc/fast:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/build
-.PHONY : malloc/fast
+initgroup/fast:
+	$(MAKE) -f CMakeFiles/initgroup.dir/build.make CMakeFiles/initgroup.dir/build
+.PHONY : initgroup/fast
 
-src/ch07/malloc.o: src/ch07/malloc.c.o
+src/ch09/initgroup.o: src/ch09/initgroup.c.o
 
-.PHONY : src/ch07/malloc.o
+.PHONY : src/ch09/initgroup.o
 
 # target to build an object file
-src/ch07/malloc.c.o:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/malloc.c.o
-.PHONY : src/ch07/malloc.c.o
+src/ch09/initgroup.c.o:
+	$(MAKE) -f CMakeFiles/initgroup.dir/build.make CMakeFiles/initgroup.dir/src/ch09/initgroup.c.o
+.PHONY : src/ch09/initgroup.c.o
 
-src/ch07/malloc.i: src/ch07/malloc.c.i
+src/ch09/initgroup.i: src/ch09/initgroup.c.i
 
-.PHONY : src/ch07/malloc.i
+.PHONY : src/ch09/initgroup.i
 
 # target to preprocess a source file
-src/ch07/malloc.c.i:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/malloc.c.i
-.PHONY : src/ch07/malloc.c.i
+src/ch09/initgroup.c.i:
+	$(MAKE) -f CMakeFiles/initgroup.dir/build.make CMakeFiles/initgroup.dir/src/ch09/initgroup.c.i
+.PHONY : src/ch09/initgroup.c.i
 
-src/ch07/malloc.s: src/ch07/malloc.c.s
+src/ch09/initgroup.s: src/ch09/initgroup.c.s
 
-.PHONY : src/ch07/malloc.s
+.PHONY : src/ch09/initgroup.s
 
 # target to generate assembly for a file
-src/ch07/malloc.c.s:
-	$(MAKE) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/src/ch07/malloc.c.s
-.PHONY : src/ch07/malloc.c.s
+src/ch09/initgroup.c.s:
+	$(MAKE) -f CMakeFiles/initgroup.dir/build.make CMakeFiles/initgroup.dir/src/ch09/initgroup.c.s
+.PHONY : src/ch09/initgroup.c.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... malloc"
-	@echo "... src/ch07/malloc.o"
-	@echo "... src/ch07/malloc.i"
-	@echo "... src/ch07/malloc.s"
+	@echo "... initgroup"
+	@echo "... src/ch09/initgroup.o"
+	@echo "... src/ch09/initgroup.i"
+	@echo "... src/ch09/initgroup.s"
 .PHONY : help
 
 
